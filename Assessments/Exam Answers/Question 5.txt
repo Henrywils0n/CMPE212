@@ -1,0 +1,28 @@
+Question 5
+
+A)
+
+super(true)
+
+B)
+
+1st:
+
+public CombinationLock(CombinationLock other) {
+	super(other.isLocked)
+	this.combo = new Combination(other.combo)
+	
+}
+
+public CombinationLock(CombinationLock other) {
+	this(other.combo);
+	this.isLocked=other.isLocked;
+}
+
+C)*
+
+super.lock()
+
+D)*
+
+super.unlock()

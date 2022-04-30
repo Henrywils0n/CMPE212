@@ -1,0 +1,50 @@
+Question 7
+
+A 
+
+public void swapFrontBack(){
+	if (this.front==null){
+		EmptyListException();
+	}
+	if (this.front==this.back) return;
+	
+	E first=this.front.elem;
+	this.front.elem=this.back.elem;
+	this.back.elem=first;
+}
+
+B)
+
+LinkedQueue<E> retainFront(){
+	if (this.front==null){
+		EmptyListException();
+	}
+	
+	Node<E> n= this.front;
+	LinkedQueue<E> return=new LinkedQueue<>();
+	return.head=this.front.next;
+	return.back=this.back;
+	return.size=this.size-1;
+	this.head.next=null;
+	this.back=this.head;
+}
+
+C)
+
+public LinkedQueue(LinkedQueue<E> other){
+
+	if(other==null){
+		this.head=null;
+		this.back==null;
+		this.size=other.size;
+	}
+	else{
+		Node<E> n=other.front;
+		this.head=n;
+		n=n.next;
+		while (n!=null){
+			this.enQueue(n);
+			n=n.next;
+		}
+	}
+}

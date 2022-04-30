@@ -1,0 +1,22 @@
+Question 4:
+
+A)	Association
+	dependency
+	
+B) 
+
+BigBinary b=new BigBinary();
+List<Bit> list=b.getBits();
+System.out.println(list==b.getBits);
+
+C)
+
+Yes because you are returning a copy of the Bit
+
+
+D)
+
+1. if a is an object of BigBinary and **BigBinary b=a;** then this==obj and equals returns false
+2. a is bigbinary number 000000000001 and b is bigbinary number 000 throws index out of bounds
+3. is a is a valid bigbinary number but b is null
+4. a is bigbinary number 000 b is bigbinary number 0001

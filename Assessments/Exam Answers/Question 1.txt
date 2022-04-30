@@ -1,0 +1,38 @@
+1
+
+A) 11
+
+B) 'this' refers to the object that calls the method
+
+C) a condition regarding the state of an object that is always true. This must be verified upon creation of an object and after every public method is finished running.
+
+D) 
+
+/**
+*Divides the first double {@code a} by the second double {@code b}
+*
+*@param a the first double
+*@param b the second double
+*@returns a divided by b
+*@throws ArithmeticException if denominator{@code b}=0.0
+*/
+
+E) Because if it is a aggregation then the a client has access to the start and end dates and can break the class invariant that Start Date<End date
+
+F)	OBJECT 
+	DOUBLE
+	NUMBER
+	COMPARABLE<DOUBLE>
+	
+G)	Number
+	Double
+	
+H)	call super() to construct the superclass
+
+I) push for array stack is O(n) while in linked stack it is O(1)
+
+J)
+
+public boolean hasPrevious(){
+	return SArrayList.this.size <this.next
+} 
